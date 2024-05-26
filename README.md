@@ -32,6 +32,7 @@ El sitio web ha sido validado por [https://validator.w3.org/](https://validator.
 - **Jeremías Geminiani**
 - **Arturo Villagran**
 
+## Muestra
 ![Ejemplo de Imagen](sample.png)
 
 Esta documentación técnica proporciona una visión detallada de la estructura, las funcionalidades, las tecnologías utilizadas y la validación por W3C del proyecto de WebTechSoluciones.
