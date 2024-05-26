@@ -1,57 +1,113 @@
-.contact{
-    background-color: var(--w);
-    margin: 2rem 2rem;
+.contact {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 2rem auto;
     padding: 1rem;
-    border-radius:4px;
-    border:1px solid var(--brd);
+    border-radius: 10px;
+    border: 1px solid var(--brd);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    position: relative;
 }
 
-.contact h1{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    line-height: 1.6;
-    letter-spacing: 1px;
-}
-.contact p{
-    font-weight: 1.6;
-    letter-spacing: .6px;
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-    margin-top: .6rem;
-}
-
-.contact #contactForm div{
-
+.contact::before {
+    content: "";
+    background-image: url('../multimedia/images/contact-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 10px;
 }
 
-.contact #contactForm div input, .contact #contactForm div textarea{
+.contact h1 {
+    font-size: 1.5rem;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact #contactForm div {
+    margin-bottom: 1rem;
+}
+
+.contact #contactForm div label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--character-about-text);
+}
+
+.contact #contactForm div input,
+.contact #contactForm div textarea,
+.contact #contactForm div select {
+    width: calc(100% - 20px);
+    padding: 0.5rem;
+    border: 1px solid var(--brd);
+    border-radius: 4px;
+    font-size: 1rem;
     outline: 0;
+    box-sizing: border-box;
 }
 
-
-.contact #contactForm div.l-agree{
+.contact #contactForm div.l-agree {
     display: flex;
-    width: 30%;
+    align-items: center;
 }
 
-.contact #contactForm div.l-agree input[type=checkbox]{
-    width: unset;
+.contact #contactForm div.l-agree input[type="checkbox"] {
+    width: auto;
     margin-left: 1rem;
 }
 
-.contact #contactForm button{
-
-    font-size: 1.2rem;
+.contact #contactForm button {
+    font-size: 1rem;
     font-weight: 200;
-    border:none;
-    border-radius: 4px 4px;
+    border: none;
+    border-radius: 4px;
     background-color: var(--btn-default);
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     color: var(--w);
     cursor: pointer;
 }
 
-.contact #contactForm button:hover{
+.contact #contactForm button:hover {
     background-color: var(--btn-default-after);
-    color:var(--main-about-text);
+    color: var(--main-about-text);
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .contact h1 {
+        font-size: 1.2rem;
+    }
 }
