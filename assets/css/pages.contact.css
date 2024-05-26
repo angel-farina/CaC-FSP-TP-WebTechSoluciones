@@ -1,0 +1,57 @@
+.contact{
+    background-color: var(--w);
+    margin: 2rem 2rem;
+    padding: 1rem;
+    border-radius:4px;
+    border:1px solid var(--brd);
+}
+
+.contact h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.contact p{
+    font-weight: 1.6;
+    letter-spacing: .6px;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    margin-top: .6rem;
+}
+
+.contact #contactForm div{
+
+}
+
+.contact #contactForm div input, .contact #contactForm div textarea{
+    outline: 0;
+}
+
+
+.contact #contactForm div.l-agree{
+    display: flex;
+    width: 30%;
+}
+
+.contact #contactForm div.l-agree input[type=checkbox]{
+    width: unset;
+    margin-left: 1rem;
+}
+
+.contact #contactForm button{
+
+    font-size: 1.2rem;
+    font-weight: 200;
+    border:none;
+    border-radius: 4px 4px;
+    background-color: var(--btn-default);
+    padding: 1rem 2rem;
+    color: var(--w);
+    cursor: pointer;
+}
+
+.contact #contactForm button:hover{
+    background-color: var(--btn-default-after);
+    color:var(--main-about-text);
+}

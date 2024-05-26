@@ -1,19 +1,23 @@
-/* Reset de estilos */
+/* -- CUERPO GENERAL -- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
+
+
+/* -- CUERPO DE PÁGINA -- */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    background-color: var(--bg);
 }
 
 header {
-    background: #525252;
-    color: #fff;
+    background: var(--nav-bg);
+    color: var(--w);
     padding: 10px 0;
 }
 
@@ -28,21 +32,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--w);
     text-decoration: none;
 }
 
 main {
-    padding: 20px;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--nav-bg);
+    color: var(--w);
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -84,27 +85,5 @@ form input, form select, form textarea {
     header, footer {
         text-align: center;
     }
-}
-
-/* Animación */
-#home h1 {
-    animation: slideIn 1s ease-in-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Logo */
-#logo {
-    width: 100px;
-    height: auto;
 }
 
