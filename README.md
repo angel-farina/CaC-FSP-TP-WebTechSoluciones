@@ -1,5 +1,5 @@
 <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
-    <p style="font-style: italic; color: #666; font-size: 14px;">Trabajo Práctico Desarrollo Web HTML, CSS y JavaScript - Full Stack Python Comisión 24150, CaC.</p>
+    <p style="font-style: italic; color: #666; font-size: 14px;">Trabajo Práctico Desarrollo Web HTML, CSS y JavaScript. Full Stack Python - Comisión 24150, CaC.</p>
 </div>
 
 # WebTechSoluciones - Documentación Técnica
