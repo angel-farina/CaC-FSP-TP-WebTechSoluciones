@@ -1,7 +1,6 @@
 section.about-is{
     width: 100% !important;
     background: url(../multimedia/images/about-us-wallpaper.png)no-repeat;
-    background-position: fixed;
     background-size: 100% 100%;
     padding: 100px 120px;
     display: flex;
@@ -33,7 +32,7 @@ section.about-is .a-inner h4{
 }
 
 section.about-is .a-inner p{
-    font-family: 1rem;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
     margin: 1.3rem 0;
     letter-spacing: 1px;
