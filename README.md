@@ -40,4 +40,5 @@ El sitio web ha sido validado por [https://validator.w3.org/](https://validator.
 ## Deploy
 [https://webtechsoluciones.netlify.app/](https://webtechsoluciones.netlify.app/)
 
+## Final
 Esta documentación técnica proporciona una visión detallada de la estructura, las funcionalidades, las tecnologías utilizadas y la validación por W3C del proyecto de WebTechSoluciones.
