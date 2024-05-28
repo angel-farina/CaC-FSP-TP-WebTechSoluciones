@@ -88,6 +88,20 @@
     margin: 0 auto 2rem;
 }
 
+#generate-alias {
+    padding: 2px 6px !important;
+    background-color: var(--btn-alias) !important;
+    color: var(--w) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+}
+
+#generate-alias:hover {
+    background-color: var(--btn-alias-after) !important;
+}
+
+
 /* responsive */
 
 @media screen and (max-width: 1024px) {

@@ -44,39 +44,57 @@ section.about-is .a-inner p{
     margin: 30rem 0 0 0 !important;
 }
 
-
 /* -- acerca de nuestros clientes */
-div.our-clients{
+div.our-clients {
     background-color: var(--w);
     color: var(--text-title);
     padding: 2rem 3rem;
+    overflow: hidden; /* Evita desbordamiento */
+    border-radius: 15px;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-div.our-clients h2{
+div.our-clients h2 {
     font-weight: 300;
     font-size: 3rem;
     line-height: 2;
+    text-align: center;
 }
 
-div.our-clients ul{
+div.our-clients ul {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-div.our-clients ul li{
-    display: inline-block;
+div.our-clients ul li {
+    flex: 1 1 calc(25% - 1rem);
+    max-width: 200px;
+    margin: 0.5rem;
 }
 
-div.our-clients ul li img{
-    width: 200px;
-    height: 200px;
+div.our-clients ul li img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
 }
 
 /* responsive */
-
 @media screen and (max-width: 1024px) {
     section.about-is .a-inner {
         width: 100%;
+    }
+
+    div.our-clients ul li {
+        flex: 1 1 calc(33.333% - 1rem); /* Ajuste para pantallas más pequeñas */
     }
 }
 
@@ -110,6 +128,7 @@ div.our-clients ul li img{
         display: block;
         text-align: center;
         margin-bottom: 2rem;
+        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
     }
 
     div.our-clients ul li img {
