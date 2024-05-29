@@ -20,6 +20,7 @@ El proyecto sigue una estructura básica de HTML, CSS y JavaScript. Los archivos
 - **Formulario de Contacto:** Permite a los usuarios enviar consultas o comentarios mediante un formulario HTML y se procesa con JavaScript.
 - **Responsive:** El sitio está diseñado para adaptarse y ser accesible en una variedad de dispositivos y tamaños de pantalla.
 - **Consumo de API:** Se consume la API [Random User Generator](https://randomuser.me/api/) para generar un alias aleatorio cuando el usuario hace clic en el botón "Aleatorio" en el formulario de contacto. Esta API proporciona datos aleatorios de usuarios, incluyendo nombres de usuario, entre otros. Cuando se hace clic en el botón, se realiza una solicitud a esta API utilizando la función `fetch()` de JavaScript. Una vez que se recibe la respuesta, se extrae el nombre de usuario aleatorio del objeto de respuesta y se establece como el valor del campo de entrada "Alias" en el formulario de contacto.
+- **Google reCAPTCHA:** Implementado en el formulario de contacto para verificar que el remitente no sea un bot antes de enviar el formulario.
 
 ## Validación W3C
 El sitio web ha sido validado por [https://validator.w3.org/](https://validator.w3.org/), lo que garantiza que el código HTML cumple con los estándares establecidos por el Consorcio World Wide Web (W3C) para la accesibilidad y la interoperabilidad web.
