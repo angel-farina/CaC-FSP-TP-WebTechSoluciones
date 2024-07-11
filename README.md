@@ -17,10 +17,16 @@ El proyecto sigue una estructura básica de HTML, CSS y JavaScript. Los archivos
 
 ## Funcionalidades Clave
 - **Slideshow:** Implementado con JavaScript y CSS para mostrar los servicios destacados en la página principal.
-- **Formulario de Contacto:** Permite a los usuarios enviar consultas o comentarios mediante un formulario HTML y se procesa con JavaScript.
+- **Formulario de Contacto:** Permite a los usuarios enviar consultas o comentarios mediante formularios de contacto que envían datos a través de una API REST.
 - **Responsive:** El sitio está diseñado para adaptarse y ser accesible en una variedad de dispositivos y tamaños de pantalla.
 - **Consumo de API:** Se consume la API [Random User Generator](https://randomuser.me/api/) para generar un alias aleatorio cuando el usuario hace clic en el botón "Aleatorio" en el formulario de contacto. Esta API proporciona datos aleatorios de usuarios, incluyendo nombres de usuario, entre otros. Cuando se hace clic en el botón, se realiza una solicitud a esta API utilizando la función `fetch()` de JavaScript. Una vez que se recibe la respuesta, se extrae el nombre de usuario aleatorio del objeto de respuesta y se establece como el valor del campo de entrada "Alias" en el formulario de contacto.
-- **Google reCAPTCHA:** Implementado en el formulario de contacto para verificar que el remitente no sea un bot antes de enviar el formulario.
+- **Google reCAPTCHA:** Implementado en el formulario de contacto para verificar que el remitente no sea un bot y prevenir envíos automáticos.
+- **Autenticación de Usuario:** Añadido auth.js para gestionar la autenticación de usuario y acceso al dashboard.
+Se verifica si el usuario está autenticado utilizando localStorage y se redirige al inicio si no lo está.
+- **Dashboard de Administración:** Desarrollado el dashboard que permite visualizar y gestionar los contactos almacenados en la API REST.
+Incluye funcionalidad para editar y eliminar datos directamente desde la interfaz.
+- **Modal de Inicio de Sesión:** Se añadió un modal interactivo para el inicio de sesión que valida las credenciales del usuario.
+Utiliza cookies y tokens CSRF para seguridad en la comunicación con la API de autenticación.
 
 ## Validación W3C
 El sitio web ha sido validado por [https://validator.w3.org/](https://validator.w3.org/), lo que garantiza que el código HTML cumple con los estándares establecidos por el Consorcio World Wide Web (W3C) para la accesibilidad y la interoperabilidad web.

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTechSoluciones - Dashboard</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../assets/css/roots.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/multimedia/images/favicon.ico">
+
+    <!-- SCRIPTS -->
+    <script src="../assets/js/auth.js" defer></script>
+    <script src="../assets/js/dashboard.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABECERA DE SITIO -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li>
+                    <a href="../pages/about.html"><i class="fas fa-info-circle"></i> Acerca de</a>
+                </li>
+                <li>
+                    <a href="../pages/services.html"><i class="fas fa-cogs"></i> Servicios</a>
+                </li>
+                <li>
+                    <a href="../pages/contact.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+                <li>
+                    <a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO DE SITIO -->
+    <main class="dashboard hidden">
+        <section class="dashboard-content">
+            <h1>Admin Dashboard</h1>
+            <div class="actions">
+                <button id="fetchData">Consultar Datos</button>
+            </div>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Alias</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Servicio</th>
+                        <th>Mensaje</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- los datos se llenan aca dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulario de Edición -->
+        <section class="edit-form hidden">
+            <h2>Editar Datos</h2>
+            <form id="editForm">
+                <input type="hidden" id="editId" name="editId">
+                <div>
+                    <label for="editName">Nombre:</label>
+                    <input type="text" id="editName" name="editName" required>
+                </div>
+                <div>
+                    <label for="editAlias">Alias:</label>
+                    <input type="text" id="editAlias" name="editAlias" required>
+                </div>
+                <div>
+                    <label for="editEmail">Correo Electrónico:</label>
+                    <input type="email" id="editEmail" name="editEmail" required>
+                </div>
+                <div>
+                    <label for="editPhone">Teléfono:</label>
+                    <input type="tel" id="editPhone" name="editPhone" required>
+                </div>
+                <div>
+                    <label for="editService">Servicio:</label>
+                    <input type="text" id="editService" name="editService" required>
+                </div>
+                <div>
+                    <label for="editMessage">Mensaje:</label>
+                    <textarea id="editMessage" name="editMessage" required></textarea>
+                </div>
+                <div class="actions">
+                    <button type="submit" class="save-button">Guardar Cambios</button>
+                    <button type="button" class="cancel-button" id="cancelEdit">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIÉ DE PÁGINA-->
+    <footer>
+        <p>&copy; 2024 - WebTechSoluciones</p>
+    </footer>
+</body>
+
+</html>
